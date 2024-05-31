@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Table Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.7/dist/html2canvas.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Table Generator</h1>
+        <div class="form-container">
+            <label for="tableTitle">Table Title:</label>
+            <input type="text" id="tableTitle" placeholder="Enter table title">
+            <label for="rows">Number of Rows:</label>
+            <input type="number" id="rows" min="1" value="3">
+            <label for="columns">Number of Columns:</label>
+            <input type="number" id="columns" min="1" value="3">
+            <button id="generateTable">Generate Table</button>
+        </div>
+        <div id="tableContainer"></div>
+        <button id="downloadTable">Download Table as Image</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

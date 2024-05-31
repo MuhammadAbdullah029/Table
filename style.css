@@ -1,0 +1,130 @@
+/* styles.css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #1d1d1d;
+    color: rgb(196, 195, 195);
+    padding: 1.5vw;
+    overflow-x: hidden;
+}
+
+.container {
+    background: black;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 55vw;
+    padding: 3vw;
+    margin-bottom: 1vw;
+    margin: 3vw;
+}
+
+.form-container {
+    margin-bottom: 20px;
+    padding: 1vw;
+}
+
+.form-container label {
+    display: block;
+    margin-top: 1.5vw;
+    text-align: left;
+}
+
+.form-container input {
+    width: 95%;
+    padding: 11px;
+    margin-top: 5px;
+    background: transparent;
+    border: 1px solid rgb(196, 195, 195);
+    border-radius: 5px;
+    outline: none;
+    color: rgb(196, 195, 195);
+}
+
+#generateTable, #downloadTable {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #1d1d1d;
+    color: rgb(196, 195, 195);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#generateTable:hover, #downloadTable:hover {
+    background-color: rgb(44, 44, 44);
+}
+
+#downloadTable {
+    display: none;
+}
+
+#tableContainer {
+    width: 95%;
+    padding: 1vw;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+
+table {
+    width: 115vw;
+    height: 100%;
+    margin-bottom: 20px;
+    background:#1d1d1d;
+    margin-top: 5vw;
+}
+
+table, th, td {
+    border: 1px solid gray;
+    outline: none;
+}
+
+th, td {
+    padding: 3px;
+    width: 6vw;
+    height: 2.5vw;
+    text-align: left;
+}
+
+caption {
+    padding: .5vw;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+    background-color:#1d1d1d;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding-top: 8vw;
+    }
+    #tableContainer {
+        padding: 5vw;
+    }
+    .form-container label {
+        margin-top: 5vw;
+        font-weight: 700;
+    }
+    .form-container input {
+        width: 98%;
+        padding: 9px;
+        margin-top: 3px;
+        border-radius: 3px;
+        
+    }
+    caption {
+        padding: 1.5vw;
+    }
+}
