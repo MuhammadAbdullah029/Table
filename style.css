@@ -82,7 +82,7 @@ table {
     height: 100%;
     margin-bottom: 20px;
     background:#1d1d1d;
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
 
 table, th, td {
@@ -91,14 +91,14 @@ table, th, td {
 }
 
 th, td {
-    padding: 3px;
+    padding: 5px;
     width: 6vw;
     height: 2.5vw;
     text-align: left;
 }
 
 caption {
-    padding: .5vw;
+    padding: .7vw;
     font-weight: bold;
     margin-bottom: 5px;
     color: white;

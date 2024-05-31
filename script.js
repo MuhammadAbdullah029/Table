@@ -5,7 +5,7 @@ document.getElementById('generateTable').addEventListener('click', function() {
     const tableTitle = document.getElementById('tableTitle').value;
 
     const tableContainer = document.getElementById('tableContainer');
-    tableContainer.innerHTML = ''; // Clear previous table
+    tableContainer.innerHTML = '';
 
     const table = document.createElement('table');
 
@@ -19,22 +19,22 @@ document.getElementById('generateTable').addEventListener('click', function() {
         const row = document.createElement('tr');
         for (let j = 0; j < columns; j++) {
             const cell = document.createElement(i === 0 ? 'th' : 'td');
-            cell.contentEditable = true; // Make cells editable
-            cell.innerText = ''; // Cells are empty by default
+            cell.contentEditable = true; 
+            cell.innerText = ''; 
             row.appendChild(cell);
         }
         table.appendChild(row);
     }
 
     tableContainer.appendChild(table);
-    document.getElementById('downloadTable').style.display = 'inline-block'; // Show download button
+    document.getElementById('downloadTable').style.display = 'inline-block'; 
 });
 
 document.getElementById('downloadTable').addEventListener('click', function() {
     const tableContainer = document.getElementById('tableContainer');
     html2canvas(tableContainer, {
-        scrollY: -window.scrollY, // Ensure the entire table is captured
-        scale: 2 // High resolution
+        scrollY: -window.scrollY, 
+        scale: 2 
     }).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
