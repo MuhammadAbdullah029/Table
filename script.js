@@ -28,13 +28,14 @@ document.getElementById('generateTable').addEventListener('click', function() {
 
     tableContainer.appendChild(table);
     document.getElementById('downloadTable').style.display = 'inline-block'; 
+    document.getElementById('clear').style.display = 'inline-block'; 
 });
 
 document.getElementById('downloadTable').addEventListener('click', function() {
-    const tableContainer = document.getElementById('tableContainer');
-    html2canvas(tableContainer, {
+    const table = document.querySelector('table');
+    html2canvas(table, {
         scrollY: -window.scrollY, 
-        scale: 2 
+        scale: 3 
     }).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
@@ -42,3 +43,8 @@ document.getElementById('downloadTable').addEventListener('click', function() {
         link.click();
     });
 });
+
+document.getElementById('clear').addEventListener("click", function(){
+    location.reload();
+}) 
+
