@@ -123,7 +123,7 @@ caption {
         padding-top: 8vw;
     }
     #tableContainer {
-        padding: 3vw;
+        padding: 3.5vw;
         overflow-x: scroll;
     }
     .form-container label {
@@ -139,13 +139,19 @@ caption {
     }
     caption {
         padding: 1.5vw;
+        border-radius: 0px;
+        border: none;
     }
     table {
     overflow-x: scroll;
+    margin-top: 40vw;
+    border-radius: 0px;
+    border: none;
     
     }
     table, th, td {
         padding: 5px 8px;
         font-size: 3vw;
+        border-radius: 0px;
     }
 }
