@@ -35,7 +35,7 @@ document.getElementById('downloadTable').addEventListener('click', function() {
     const table = document.querySelector('table');
     html2canvas(table, {
         scrollY: -window.scrollY, 
-        scale: 3 
+        scale: 3
     }).then(canvas => {
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
